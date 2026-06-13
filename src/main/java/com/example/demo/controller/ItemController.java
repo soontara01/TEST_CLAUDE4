@@ -35,4 +35,13 @@ public class ItemController {
         items.put(item.getId(), item);
         return ResponseEntity.status(HttpStatus.CREATED).body(item);
     }
+
+    // DELETE /api/items/{id} - deletes an item by id
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteItem(@PathVariable Long id) {
+        if (items.remove(id) == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.noContent().build();
+    }
 }

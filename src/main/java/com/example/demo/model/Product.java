@@ -1,16 +1,18 @@
 package com.example.demo.model;
 
-public class Item {
+public class Product {
 
     private Long id;
+    private String code;
     private String name;
     private double price;
 
-    public Item() {
+    public Product() {
     }
 
-    public Item(Long id, String name, double price) {
+    public Product(Long id, String code, String name, double price) {
         this.id = id;
+        this.code = code;
         this.name = name;
         this.price = price;
     }
@@ -21,6 +23,14 @@ public class Item {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getName() {
@@ -37,10 +47,5 @@ public class Item {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Item{id=" + id + ", name='" + name + "', price=" + price + "}";
     }
 }
