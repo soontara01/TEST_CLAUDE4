@@ -18,7 +18,7 @@ public class ItemController {
     private final AtomicLong idCounter = new AtomicLong();
 
     public ItemController() {
-        Item sample = new Item(idCounter.incrementAndGet(), "Sample Item", 9.99);
+        Item sample = new Item(idCounter.incrementAndGet(), "Sample Item", 2999.99);
         items.put(sample.getId(), sample);
     }
 
