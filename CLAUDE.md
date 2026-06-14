@@ -16,11 +16,6 @@ mvn -Dtest=ProductControllerTest#getProducts_returnsSeededSampleProduct test  # 
 mvn spring-boot:run                       # run the app (listens on port 8081, see application.properties)
 ```
 
-**Environment note:** `mvn` is not always on the default shell PATH, and the default `JAVA_HOME` may point
-at a JRE (Maven will fail with "No compiler is provided in this environment"). If `mvn test` fails for either
-reason, set:
-- `JAVA_HOME=C:\NOOM_PRO\program_noom2\program_noom2\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7`
-- prepend `C:\NOOM_PRO\program_noom2\program_noom2\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin` to PATH
 
 ## Architecture
 

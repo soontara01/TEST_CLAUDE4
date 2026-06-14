@@ -1,7 +1,7 @@
 ---
 name: test-runner
 description: Use PROACTIVELY to run the test suite after code changes. Runs tests and reports ONLY failures with their error messages, keeping verbose output out of the main context.
-tools: Read, Grep, Glob, Bash
+tools: Read, Grep, Glob, Bash , Skill
 model: sonnet
 ---
 
