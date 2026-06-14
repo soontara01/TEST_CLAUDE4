@@ -56,3 +56,5 @@ public class PromotionController {
         return ResponseEntity.ok(freeQuantity);
     }
 }
+
+//ss
